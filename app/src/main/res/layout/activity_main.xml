@@ -6,27 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="203dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="556dp">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="395dp"
+        android:layout_height="688dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488"
+        app:srcCompat="@drawable/changed_back"
+        tools:srcCompat="@drawable/changed_back" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter the code"
-            android:inputType="textPersonName"
-            android:text="Enter the code" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#21C337"
+        android:backgroundTint="#2DC512"
+        android:drawableTint="#006EA11B"
+        android:text="Join"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:iconTint="#C11D1D"
+        app:rippleColor="#19FF00"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="350dp" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Join" />
-    </LinearLayout>
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="348dp"
+        android:ems="10"
+        android:hint="Enter the code"
+        android:inputType="textPersonName"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:text="Enter the code"
+        android:translationZ="20"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
